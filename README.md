@@ -122,7 +122,7 @@ To find the industry groups of above products, we add column â€˜industry_groupâ€
 **Result:**
 
 product_name |	Average_carbon_footprint |	industry_group
-------------- | -------------
+------------- | ------------- | -------------
 Wind Turbine G128 5 Megawats |	3718044.00 |	Electrical Equipment and Machinery
 Wind Turbine G132 5 Megawats |	3276187.00 |	Electrical Equipment and Machinery
 Wind Turbine G114 2 Megawats |	1532608.00 | 	Electrical Equipment and Machinery
