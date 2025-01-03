@@ -89,7 +89,8 @@ We calculate the carbon emissions of each product based on the carbon_footprint_
 
 **Results:**
 
-|product_name | Average_carbon_footprint|
+product_name | Average_carbon_footprint
+------------- | -------------
 Wind Turbine G128 5 Megawats |	3718044.00
 Wind Turbine G132 5 Megawats |	3276187.00
 Wind Turbine G114 2 Megawats |	1532608.00
