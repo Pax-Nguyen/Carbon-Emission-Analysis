@@ -1,4 +1,5 @@
 # Carbon Emission Analysis
+
 ## 1. Report Introduction
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/150f29f5-a834-4f25-af1c-6ad337436909" />
 
@@ -16,6 +17,7 @@ Our dataset is compiled from publicly available data from nature.com and encompa
 
 The dataset consists of 4 tables containing information regarding carbon emissions generated during the production of goods.
 
+<img width="468" alt="image" src="https://github.com/user-attachments/assets/101a7040-9aff-4fc9-b339-2565c012ff0b" />
 
 
 
