@@ -1,4 +1,4 @@
-# Carbon Emission Analysis
+![image](https://github.com/user-attachments/assets/2b2f9d59-d499-4696-82b3-160c47700e66)# Carbon Emission Analysis
 
 ## 1. Report Introduction
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/150f29f5-a834-4f25-af1c-6ad337436909" />
@@ -48,7 +48,31 @@ Our dataset is compiled from publicly available data from nature.com and encompa
 1.	id: Unique identifier for each country.
 2.	country_name: The name of the country.
 
-##. 
+## 3. Research Questions
+
+1.	Which products contribute the most to carbon emissions?
+2.	What are the industry groups of these products?
+3.	What are the industries with the highest contribution to carbon emissions?
+4.	What are the companies with the highest contribution to carbon emissions?
+5.	What are the countries with the highest contribution to carbon emissions?
+6.	What is the trend of carbon footprints (PCFs) over the years?
+7.	Which industry groups have demonstrated the most notable decrease in carbon footprints (PCFs) over time?
+
+To answer the above questions, we will use SQL queries to extract the needed information base on the given tables listed in Data structure
+
+Combine 4 tables into 1, so that we will get a master table which inlucdes all information we need
+
+**SQL query:**
+
+        SELECT *
+        FROM product_emissions as pro
+        JOIN industry_groups as ind ON pro.industry_group_id = ind.id
+        JOIN companies as com ON pro.company_id = com.id
+        JOIN countries as cou ON pro.country_id = cou.id;
+
+**SQL query explanation**: We use JOIN to combine 4 tables
+
+
 
 
 
