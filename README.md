@@ -13,13 +13,13 @@ Through this analysis, we hope to gain an understanding of the environmental imp
 
 Our dataset is compiled from publicly available data from nature.com and encompasses the product carbon footprints (PCF) for various companies. PCFs represent the greenhouse gas emissions associated with specific products, quantified in CO2 (carbon dioxide equivalent)
 
-## 3. Data Structure
-
-The dataset consists of 4 tables containing information regarding carbon emissions generated during the production of goods.
+  ### 2.1 Data Structure
+  
+  The dataset consists of 4 tables containing information regarding carbon emissions generated during the production of goods.
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/101a7040-9aff-4fc9-b339-2565c012ff0b" />
 
-## 4. Tables columns description
+### 2.2 Tables columns description
 
 **Table 'product_emissions'**
 
@@ -48,7 +48,7 @@ The dataset consists of 4 tables containing information regarding carbon emissio
 1.	id: Unique identifier for each country.
 2.	country_name: The name of the country.
 
-
+##. 
 
 
 
