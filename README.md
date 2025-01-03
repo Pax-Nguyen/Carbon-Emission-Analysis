@@ -136,7 +136,95 @@ Mercedes-Benz SL (SL 350) |	72000.00 |	Automobiles & Components
 
 The products with the highest levels of carbon emissions are typically associated with heavy industry.
 
+### 3.4 What are the companies with the highest contribution to carbon emissions?
 
+We calculate the carbon emissions of each company based on the carbon_footprint_pcf
 
+**SQL query explanation:** We SELECT the company_name and average carbon footprint, then GROUP BY company_name and arrage the result DESCENDING on average carbon footprint
 
+        SELECT company_name, ROUND(AVG(carbon_footprint_pcf),2)  as Average_carbon_footprint
+        FROM product_emissions as pro
+        JOIN industry_groups as ind ON pro.industry_group_id = ind.id
+        JOIN companies as com ON pro.company_id = com.id
+        JOIN countries as cou ON pro.country_id = cou.id
+        GROUP BY company_name
+        ORDER BY Average_carbon_footprint DESC
+        LIMIT 10;
+
+**Result:**
+
+company_name |	Average_carbon_footprint
+------------- | -------------
+"Gamesa Corporación Tecnológica, S.A." |	2444616.00
+"Hino Motors, Ltd." |	191687.00
+Arcelor Mittal |	83503.50
+Weg S/A |	53551.67
+Daimler AG |	43089.19
+General Motors Company |	34251.75
+Volkswagen AG |	26238.40
+Waters Corporation |	24162.00
+"Daikin Industries, Ltd." |	17600.00
+CJ Cheiljedang |	15802.83
+
+Most of the companies with the highest carbon emissions are typically linked to heavy industries. Leading the list is Gamesa Corporación, a manufacturer of wind turbines, with a carbon footprint of 2,444,616. Top 1 is Gamesa Corporación which produce the wind turbine, contribute 2.444.616 carbon footprint. It is truly paradoxical that a green energy company emits the largest amount of carbon emissions into the earth’s atmosphere.
+
+### 3.5 What are the countries with the highest contribution to carbon emissions?
+
+We calculate the carbon emissions of each country based on the carbon_footprint_pcf
+
+**SQL query explanation:** We SELECT the country_name and average carbon footprint, then GROUP BY country_name and arrange the result DESCENDING on average carbon footprint
+
+        SELECT country_name, ROUND(AVG(carbon_footprint_pcf),2)  as Average_carbon_footprint
+        FROM product_emissions as pro
+        JOIN industry_groups as ind ON pro.industry_group_id = ind.id
+        JOIN companies as com ON pro.company_id = com.id
+        JOIN countries as cou ON pro.country_id = cou.id
+        GROUP BY country_name
+        ORDER BY Average_carbon_footprint DESC
+        LIMIT 10;
+
+**Result:**
+
+country_name |	Average_carbon_footprint
+------------- | -------------
+Spain |	699009.29
+Luxembourg |	83503.50
+Germany |	33600.37
+Brazil |	9407.61
+South Korea |	5665.61
+Japan |	4600.26
+Netherlands |	2011.91
+India |	1535.88
+USA |	1332.60
+South Africa |	1119.27
+
+Spain is the largest contributor to carbon emissions in the air. Notably, four of the top ten countries with the highest emissions are from Europe.
+
+### 3.6 What is the trend of carbon footprints (PCFs) over the years?
+
+To calculate the trend, we have to get 2 information: year and average carbon footprint each year
+
+**SQL query explanation:** We SELECT year and average carbon footprint, then GROUP BY year
+
+        SELECT year, ROUND(AVG(carbon_footprint_pcf),2)  as Average_carbon_footprint
+        FROM product_emissions as pro
+        JOIN industry_groups as ind ON pro.industry_group_id = ind.id
+        JOIN companies as com ON pro.company_id = com.id
+        JOIN countries as cou ON pro.country_id = cou.id
+        GROUP BY year
+        LIMIT 10;
+
+**Result:**
+
+year |	Average_carbon_footprint
+------------- | -------------
+2013 |	2399.32
+2014 |	2457.58
+2015 |	43188.90
+2016 |	6891.52
+2017 |	4050.85
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/933ae6b4-443f-4416-a0ad-dd99a0bb0de0" />
+
+Overall, carbon emissions showed a slight increase from 2013 to 2017. A notable observation is the sharp rise in 2014, from 2,457 to 43,188, followed by an equally steep decline in 2015, dropping from 43,188 to 6,891
 
