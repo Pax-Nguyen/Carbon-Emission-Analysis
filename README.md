@@ -58,9 +58,9 @@ Our dataset is compiled from publicly available data from nature.com and encompa
 6.	What is the trend of carbon footprints (PCFs) over the years?
 7.	Which industry groups have demonstrated the most notable decrease in carbon footprints (PCFs) over time?
 
-To answer the above questions, we will use SQL queries to extract the needed information base on the given tables listed in Data structure
+To answer the above questions, we will use SQL queries to extract the needed information based on the given tables listed in the Data structure
 
-Combine 4 tables into 1, so that we will get a master table which inlucdes all information we need
+Combine 4 tables into 1, so that we will get **a master table** which includes all information we need
 
 **SQL query:**
 
@@ -227,4 +227,12 @@ year |	Average_carbon_footprint
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/933ae6b4-443f-4416-a0ad-dd99a0bb0de0" />
 
 Overall, carbon emissions showed a slight increase from 2013 to 2017. A notable observation is the sharp rise in 2014, from 2,457 to 43,188, followed by an equally steep decline in 2015, dropping from 43,188 to 6,891
+
+### 3.7 Which industry groups have demonstrated the most notable decrease in carbon footprints (PCFs) over time?
+
+We copy the data from the master table and paste it into the Excel file so that we can draw the chart more easily
+
+**Result:**
+
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/80ff295a-8e4d-40f6-9298-55a26f364e9a" />
 
