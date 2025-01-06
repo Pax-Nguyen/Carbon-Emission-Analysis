@@ -247,3 +247,5 @@ Product	| Wind turbine |	3718044
 Industry group |	Electrical Equipment and Machinery	|	891050.73
 Company	|	Gamesa Corporación Tecnológica, S.A.	|	2444616
 Country	|	Spain	|	699009.29
+
+The global trend of carbon emissions has been declining due to the implementation of regulations aimed at protecting the planet.
