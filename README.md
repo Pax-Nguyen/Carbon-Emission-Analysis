@@ -236,3 +236,14 @@ We copy the data from the master table and paste it into the Excel file so that 
 
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/80ff295a-8e4d-40f6-9298-55a26f364e9a" />
 
+The results indicate that the Automobiles and Components industry achieved the most significant reduction in carbon emissions between 2013 and 2017, with a decrease of 26,038.
+
+## Summary
+
+In term of the highest carbon emissions:
+Category | Name | Carbon emissions
+------------- | ------------- | -------------
+Product	| Wind turbine |	3718044
+Industry group |	Electrical Equipment and Machinery	|	891050.73
+Company	|	Gamesa Corporación Tecnológica, S.A.	|	2444616
+Country	|	Spain	|	699009.29
